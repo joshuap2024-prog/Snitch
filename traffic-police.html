@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Traffic Police Sightings | Snitch SG</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html"><span class="brand-mark">S</span><span class="wordmark"><span>Snitch</span><small>SG</small></span></a>
+      <nav class="nav-links"><a href="nea.html">NEA</a><a class="active-link" href="traffic-police.html">Traffic Police</a><a href="lta.html">LTA</a><a href="spf.html">SPF</a><a href="map.html">Live Map</a><a href="signup.html">Sign Up</a></nav>
+      <button class="icon-button" data-open-report aria-label="Open report panel" title="Report a sighting"><span aria-hidden="true">+</span></button>
+    </header>
+    <main class="page-shell">
+      <section class="page-hero tp-page">
+        <p class="eyebrow">Traffic Police board</p>
+        <h1>Summons and road checks</h1>
+        <p>Aggregated sightings for visible traffic enforcement, road blocks, bus lane summons activity, speed checks, and illegal turn monitoring.</p>
+      </section>
+      <section class="agency-layout">
+        <div class="agency-main">
+          <div class="board-header compact"><h2>Active clusters</h2><button class="button secondary" data-open-report>Submit TP sighting</button></div>
+          <article class="sighting-card"><div><span class="tag tp">High</span><h3>Serangoon Road bus lane corridor</h3><p>Morning summons activity reported by several commuters during the 08:00-09:00 window.</p></div><strong>6 reports</strong></article>
+          <article class="sighting-card"><div><span class="tag tp">Medium</span><h3>AYE toward city entry</h3><p>Visible speed-check presence reported across a broad expressway segment.</p></div><strong>2 reports</strong></article>
+          <article class="sighting-card"><div><span class="tag tp">Watch</span><h3>Woodlands checkpoint approach</h3><p>Queue and lane compliance monitoring reported around late evening.</p></div><strong>1 report</strong></article>
+        </div>
+        <aside class="agency-side">
+          <h2>Common watch areas</h2>
+          <ul><li>Bus lanes and yellow boxes</li><li>Expressway entry stretches</li><li>Illegal turn junctions</li><li>Checkpoint and school-zone roads</li></ul>
+        </aside>
+      </section>
+    </main>
+    <aside class="report-panel" aria-hidden="true"><div class="panel-card"><button class="close-button" data-close-report aria-label="Close report panel">x</button><p class="eyebrow">Submit sighting</p><h2>Area-level TP report</h2><form><label>Area<input placeholder="e.g. Serangoon Road corridor"></label><label>Time window<input placeholder="e.g. 08:00-09:00"></label><label>Notes<textarea placeholder="Describe public enforcement only."></textarea></label><button class="button primary" type="button" data-close-report>Preview report</button></form></div></aside>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sign Up | Snitch SG</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html"><span class="brand-mark">S</span><span class="wordmark"><span>Snitch</span><small>SG</small></span></a>
+      <nav class="nav-links"><a href="nea.html">NEA</a><a href="traffic-police.html">Traffic Police</a><a href="lta.html">LTA</a><a href="spf.html">SPF</a><a href="map.html">Live Map</a><a class="active-link" href="signup.html">Sign Up</a></nav>
+      <button class="icon-button" data-open-report aria-label="Open report panel" title="Report a sighting"><span aria-hidden="true">+</span></button>
+    </header>
+
+    <main class="signup-page">
+      <section class="signup-copy">
+        <p class="eyebrow">Full access</p>
+        <h1>$10/month</h1>
+        <p>Unlock the full civic-awareness dashboard, expanded map filters, agency boards, saved areas, and weekly enforcement visibility summaries.</p>
+        <div class="disclaimer-banner strong">
+          <strong>Important:</strong>
+          <span>Membership does not provide instructions to evade law enforcement. Snitch SG is for awareness and lawful decision-making only.</span>
+        </div>
+        <ul class="feature-list">
+          <li>Live map with agency-specific icons and proximity estimates</li>
+          <li>Expanded area-level sighting history</li>
+          <li>Saved neighbourhoods and commute corridors</li>
+          <li>Privacy-first reports with no personal data collection fields</li>
+        </ul>
+      </section>
+
+      <section class="signup-card" aria-label="Sign up form">
+        <div class="price-card">
+          <span>Snitch SG Plus</span>
+          <strong>$10</strong>
+          <small>per month</small>
+        </div>
+        <form>
+          <label>Full name<input type="text" placeholder="Your name"></label>
+          <label>Email<input type="email" placeholder="you@example.com"></label>
+          <label>Password<input type="password" placeholder="Create a password"></label>
+          <label>Payment card<input type="text" placeholder="4242 4242 4242 4242"></label>
+          <div class="form-row">
+            <label>Expiry<input type="text" placeholder="MM/YY"></label>
+            <label>CVC<input type="text" placeholder="123"></label>
+          </div>
+          <label class="check-row"><input type="checkbox"> I agree to use Snitch SG for lawful civic awareness only.</label>
+          <button class="button primary" type="button">Start membership</button>
+        </form>
+      </section>
+    </main>
+
+    <aside class="report-panel" aria-hidden="true"><div class="panel-card"><button class="close-button" data-close-report aria-label="Close report panel">x</button><p class="eyebrow">Submit sighting</p><h2>Area-level report</h2><form><label>Area<input placeholder="e.g. Tampines Central"></label><label>Time window<input placeholder="e.g. 12:00-13:00"></label><label>Notes<textarea placeholder="No personal data."></textarea></label><button class="button primary" type="button" data-close-report>Preview report</button></form></div></aside>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Live Map | Snitch SG</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html"><span class="brand-mark">S</span><span class="wordmark"><span>Snitch</span><small>SG</small></span></a>
+      <nav class="nav-links"><a href="nea.html">NEA</a><a href="traffic-police.html">Traffic Police</a><a href="lta.html">LTA</a><a href="spf.html">SPF</a><a class="active-link" href="map.html">Live Map</a><a href="signup.html">Sign Up</a></nav>
+      <button class="icon-button" data-open-report aria-label="Open report panel" title="Report a sighting"><span aria-hidden="true">+</span></button>
+    </header>
+
+    <main class="map-page">
+      <section class="map-hero">
+        <div>
+          <p class="eyebrow">Live proximity map</p>
+          <h1>Nearby enforcement sightings</h1>
+          <p>View broad, community-reported enforcement clusters by agency. Distances are approximate and based on area-level reports, not officer tracking.</p>
+        </div>
+        <a class="button primary" href="signup.html">$10/month full access</a>
+      </section>
+
+      <section class="disclaimer-banner strong">
+        <strong>This is not a dodging tool.</strong>
+        <span>Snitch SG does not encourage avoiding lawful enforcement, evading summons, confronting officers, or interfering with public duties. The map is for civic awareness, safer trip planning, and understanding public enforcement presence at an area level.</span>
+      </section>
+
+      <section class="map-layout">
+        <div class="map-stage" aria-label="Map of Singapore enforcement sightings">
+          <div class="map-grid"></div>
+          <div class="map-road road-one"></div>
+          <div class="map-road road-two"></div>
+          <div class="map-road road-three"></div>
+          <button class="map-pin nea-pin" style="left: 68%; top: 46%;" data-pin="Tampines Central" aria-label="NEA sighting at Tampines Central"><span>NEA</span></button>
+          <button class="map-pin tp-pin" style="left: 42%; top: 55%;" data-pin="Serangoon Road" aria-label="Traffic Police sighting at Serangoon Road"><span>TP</span></button>
+          <button class="map-pin lta-pin" style="left: 58%; top: 31%;" data-pin="Punggol PCN" aria-label="LTA sighting at Punggol PCN"><span>LTA</span></button>
+          <button class="map-pin spf-pin" style="left: 36%; top: 66%;" data-pin="Orchard event area" aria-label="SPF sighting at Orchard event area"><span>SPF</span></button>
+          <button class="map-pin nea-pin" style="left: 31%; top: 41%;" data-pin="Jurong East" aria-label="NEA sighting at Jurong East"><span>NEA</span></button>
+          <div class="user-dot" data-user-dot hidden><span>You</span></div>
+        </div>
+
+        <aside class="proximity-panel">
+          <div class="panel-top">
+            <div>
+              <p class="eyebrow">Proximity</p>
+              <h2>Closest sightings</h2>
+            </div>
+            <button class="button secondary" data-use-location>Use my location</button>
+          </div>
+          <p class="map-note" data-location-status>Default distances use a central Singapore reference point. Allow location access for a closer estimate.</p>
+          <div class="legend">
+            <span><i class="legend-dot nea-dot"></i>NEA</span>
+            <span><i class="legend-dot tp-dot"></i>Traffic Police</span>
+            <span><i class="legend-dot lta-dot"></i>LTA</span>
+            <span><i class="legend-dot spf-dot"></i>SPF</span>
+          </div>
+          <div class="proximity-list" data-proximity-list></div>
+        </aside>
+      </section>
+    </main>
+
+    <aside class="report-panel" aria-hidden="true"><div class="panel-card"><button class="close-button" data-close-report aria-label="Close report panel">x</button><p class="eyebrow">Submit sighting</p><h2>Area-level report</h2><form><label>Category<select><option>NEA smoking enforcement</option><option>Traffic Police summons</option><option>LTA road operation</option><option>SPF public patrol</option></select></label><label>Area<input placeholder="e.g. Tampines Central"></label><label>Time window<input placeholder="e.g. 12:00-13:00"></label><label>Notes<textarea placeholder="Do not include personal data or exact trailing details."></textarea></label><button class="button primary" type="button" data-close-report>Preview report</button></form></div></aside>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Snitch SG | Civic Enforcement Awareness</title>
+    <meta name="description" content="Community awareness for public enforcement activity in Singapore, with safety-first reporting guardrails.">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Snitch SG home">
+        <span class="brand-mark">S</span>
+        <span class="wordmark"><span>Snitch</span><small>SG</small></span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="nea.html">NEA</a>
+        <a href="traffic-police.html">Traffic Police</a>
+        <a href="lta.html">LTA</a>
+        <a href="spf.html">SPF</a>
+        <a href="map.html">Live Map</a>
+        <a href="signup.html">Sign Up</a>
+      </nav>
+      <button class="icon-button" data-open-report aria-label="Open report panel" title="Report a sighting">
+        <span aria-hidden="true">+</span>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero">
+        <img src="assets/singapore-civic-hero.png" alt="Singapore street scene with civic awareness cues">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Singapore civic awareness</p>
+          <h1 class="hero-wordmark"><span>Snitch</span><small>SG</small></h1>
+          <p class="hero-copy">Crowd-sourced enforcement visibility for ordinary citizens, built around lawful behaviour, public safety, and privacy-first reporting.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#live-board">View sightings</a>
+            <a class="button secondary" href="map.html">Open live map</a>
+            <button class="button secondary" data-open-report>Submit sighting</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="status-strip" aria-label="Current activity summary">
+        <article>
+          <strong>47</strong>
+          <span>reports this week</span>
+        </article>
+        <article>
+          <strong>12</strong>
+          <span>towns covered</span>
+        </article>
+        <article>
+          <strong>4</strong>
+          <span>agency categories</span>
+        </article>
+        <article>
+          <strong>0</strong>
+          <span>personal data fields</span>
+        </article>
+      </section>
+
+      <section class="disclaimer-banner">
+        <strong>Clear purpose:</strong>
+        <span>This website is not for dodging law enforcement, avoiding summons, or interfering with public officers. It is a civic-awareness concept that encourages lawful behaviour, safer planning, and privacy-first reporting.</span>
+      </section>
+
+      <section class="section-grid">
+        <div class="section-intro">
+          <p class="eyebrow">Categories</p>
+          <h2>Know what is active around you</h2>
+          <p>Browse aggregated sightings by enforcement type. Reports are grouped by area and time window so the site stays useful without exposing individual officers or members of the public.</p>
+        </div>
+
+        <div class="category-grid">
+          <a class="category-card" href="nea.html">
+            <span class="category-icon">NEA</span>
+            <h3>NEA smoking enforcement</h3>
+            <p>Smoking corners, sheltered walkways, bus stops, hawker centres, and queue areas.</p>
+            <span>Open board</span>
+          </a>
+          <a class="category-card" href="traffic-police.html">
+            <span class="category-icon red">TP</span>
+            <h3>Traffic Police summons</h3>
+            <p>Road blocks, speed checks, illegal turns, bus lane activity, and parking summons clusters.</p>
+            <span>Open board</span>
+          </a>
+          <a class="category-card" href="lta.html">
+            <span class="category-icon amber">LTA</span>
+            <h3>LTA road operations</h3>
+            <p>PMD checks, bus lane enforcement, taxi stand monitoring, and vehicle inspection activity.</p>
+            <span>Open board</span>
+          </a>
+          <a class="category-card" href="spf.html">
+            <span class="category-icon blue">SPF</span>
+            <h3>SPF public patrols</h3>
+            <p>Neighbourhood patrol presence, public order checks, and event-area crowd management.</p>
+            <span>Open board</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="live-board" id="live-board">
+        <div class="board-header">
+          <div>
+            <p class="eyebrow">Live-style board</p>
+            <h2>Recent community sightings</h2>
+          </div>
+          <div class="filter-group" aria-label="Filter sightings">
+            <button class="chip active" data-filter="all">All</button>
+            <button class="chip" data-filter="nea">NEA</button>
+            <button class="chip" data-filter="tp">TP</button>
+            <button class="chip" data-filter="lta">LTA</button>
+            <button class="chip" data-filter="spf">SPF</button>
+          </div>
+        </div>
+
+        <div class="sighting-list">
+          <article class="sighting-card" data-type="nea">
+            <div>
+              <span class="tag nea">NEA</span>
+              <h3>Smoking checks around hawker perimeter</h3>
+              <p>Tampines Central, grouped report window: 12:00-13:00</p>
+            </div>
+            <strong>18 min</strong>
+          </article>
+          <article class="sighting-card" data-type="tp">
+            <div>
+              <span class="tag tp">Traffic Police</span>
+              <h3>Summons activity near bus lane</h3>
+              <p>Serangoon Road corridor, grouped report window: 08:00-09:00</p>
+            </div>
+            <strong>42 min</strong>
+          </article>
+          <article class="sighting-card" data-type="lta">
+            <div>
+              <span class="tag lta">LTA</span>
+              <h3>PMD and path-use checks</h3>
+              <p>Punggol park connector zone, grouped report window: 18:00-19:00</p>
+            </div>
+            <strong>1 hr</strong>
+          </article>
+          <article class="sighting-card" data-type="spf">
+            <div>
+              <span class="tag spf">SPF</span>
+              <h3>Neighbourhood patrol visibility</h3>
+              <p>Orchard event area, grouped report window: 20:00-21:00</p>
+            </div>
+            <strong>2 hr</strong>
+          </article>
+        </div>
+      </section>
+
+      <section class="guidelines">
+        <div>
+          <p class="eyebrow">Reporting rules</p>
+          <h2>Useful without becoming invasive</h2>
+        </div>
+        <ul>
+          <li>No officer faces, names, badge numbers, vehicle plates, or private chat screenshots.</li>
+          <li>Use area-level locations and time windows instead of exact step-by-step movement.</li>
+          <li>Do not encourage evasion, confrontation, harassment, or interference with enforcement duties.</li>
+          <li>Assume every report is approximate until multiple independent sightings confirm it.</li>
+        </ul>
+      </section>
+    </main>
+
+    <aside class="report-panel" aria-hidden="true">
+      <div class="panel-card">
+        <button class="close-button" data-close-report aria-label="Close report panel">x</button>
+        <p class="eyebrow">Submit sighting</p>
+        <h2>Share an area-level report</h2>
+        <form>
+          <label>
+            Category
+            <select>
+              <option>NEA smoking enforcement</option>
+              <option>Traffic Police summons</option>
+              <option>LTA road operation</option>
+              <option>SPF public patrol</option>
+            </select>
+          </label>
+          <label>
+            Area
+            <input type="text" placeholder="e.g. Tampines Central">
+          </label>
+          <label>
+            Time window
+            <input type="text" placeholder="e.g. 12:00-13:00">
+          </label>
+          <label>
+            Notes
+            <textarea placeholder="Describe the public activity. Do not include personal data."></textarea>
+          </label>
+          <button class="button primary" type="button" data-close-report>Preview report</button>
+        </form>
+      </div>
+    </aside>
+
+    <script src="script.js"></script>
+  </body>
+</html>

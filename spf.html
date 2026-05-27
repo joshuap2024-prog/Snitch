@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SPF Patrol Sightings | Snitch SG</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html"><span class="brand-mark">S</span><span class="wordmark"><span>Snitch</span><small>SG</small></span></a>
+      <nav class="nav-links"><a href="nea.html">NEA</a><a href="traffic-police.html">Traffic Police</a><a href="lta.html">LTA</a><a class="active-link" href="spf.html">SPF</a><a href="map.html">Live Map</a><a href="signup.html">Sign Up</a></nav>
+      <button class="icon-button" data-open-report aria-label="Open report panel" title="Report a sighting"><span aria-hidden="true">+</span></button>
+    </header>
+    <main class="page-shell">
+      <section class="page-hero spf-page">
+        <p class="eyebrow">SPF board</p>
+        <h1>Public patrol visibility</h1>
+        <p>Broad reports for neighbourhood patrols, crowd management, event-area presence, and visible public order checks.</p>
+      </section>
+      <section class="agency-layout">
+        <div class="agency-main">
+          <div class="board-header compact"><h2>Active clusters</h2><button class="button secondary" data-open-report>Submit SPF sighting</button></div>
+          <article class="sighting-card"><div><span class="tag spf">High</span><h3>Orchard event area</h3><p>Public patrol visibility reported across several malls and event approaches.</p></div><strong>7 reports</strong></article>
+          <article class="sighting-card"><div><span class="tag spf">Medium</span><h3>Clarke Quay riverside</h3><p>Evening crowd management presence reported in a broad nightlife-area window.</p></div><strong>3 reports</strong></article>
+          <article class="sighting-card"><div><span class="tag spf">Watch</span><h3>Bedok town centre</h3><p>Neighbourhood patrol activity reported near public transport exits.</p></div><strong>1 report</strong></article>
+        </div>
+        <aside class="agency-side">
+          <h2>Common watch areas</h2>
+          <ul><li>Town centres and MRT exits</li><li>Event spaces and malls</li><li>Nightlife districts</li><li>Neighbourhood patrol routes</li></ul>
+        </aside>
+      </section>
+    </main>
+    <aside class="report-panel" aria-hidden="true"><div class="panel-card"><button class="close-button" data-close-report aria-label="Close report panel">x</button><p class="eyebrow">Submit sighting</p><h2>Area-level SPF report</h2><form><label>Area<input placeholder="e.g. Orchard event area"></label><label>Time window<input placeholder="e.g. 20:00-21:00"></label><label>Notes<textarea placeholder="No identifying details or operational interference."></textarea></label><button class="button primary" type="button" data-close-report>Preview report</button></form></div></aside>
+    <script src="script.js"></script>
+  </body>
+</html>
